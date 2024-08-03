@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Haiwen (Haven) Feng</title>
+
+    <meta name="author" content="Haiwen Feng">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Haven (Haiwen) Feng
+                </p>
+                <p>Hi, I'm Haven! I'm a 3rd year PhD student at <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems (MPI-IS)</a>, advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>. <br>
+                  Starting in Autumn 2024, I will be visiting <a href="https://bair.berkeley.edu/">Berkeley AI Research </a>, where I will be co-advised by <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. I've also spent a wonderful summer with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s group at Adobe in 2023, hosted by <a href="https://ceciliavision.github.io/">Cecilia Zhang</a>.
+                </p>
+                <p>
+                  Before my PhD, I received B.Sc. and M.Sc. degrees in Physics at the University of Tübingen. For my master's, I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a> at Tübingen AI Center. During my bachelor's, I worked on 3D face reconstruction with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
+                   I was born and raised in Beijing.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:havenfeng422@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=g5co-iIAAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://x.com/HavenFeng/">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/haven-haiwen-feng-05937b88/">Linkedin</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/HavenFeng/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/HavenFeng.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 20%;" alt="profile photo" src="images/HavenFeng.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in machine learning, computer vision, computer graphics, and particularly in how to understand and recreate our physical world in a principled and generalized way. My research centers on visual inverse problems and controllable generation with foundation models (various kinds of them). 
+                  <!-- Some papers are <span class="highlight">highlighted</span>. --> Selected publications are listed below.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="ig_llm_stop()" onmouseover="ig_llm_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ig_llm_image'><video  width=100% muted autoplay loop>
+          <source src="images/ig_llm.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/ig_llm.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ig_llm_start() {
+            document.getElementById('ig_llm_image').style.opacity = "1";
+          }
+
+          function ig_llm_stop() {
+            document.getElementById('ig_llm_image').style.opacity = "0";
+          }
+          ig_llm_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://ig-llm.is.tue.mpg.de/">
+          <span class="papertitle">IG-LLM: Re-Thinking Inverse Graphics With Large Language Models
+          </span>
+        </a>
+        <br>
+				Peter Kulits*,
+        <strong>Haiwen Feng*</strong>,
+        Weiyang Liu, 
+        Victoria Abrevaya,
+        Michael J. Black
+        <br>
+        <em>TMLR</em>, 2024
+        <br>
+        <a href="https://ig-llm.is.tue.mpg.de/">project page</a>
+        /
+        <a href="https://download.is.tue.mpg.de/ig-llm/ig-llm-arXiv.pdf">arXiv</a>
+        <p></p>
+        <p>
+          We explored if inverse graphics could be approached as a code generation task and found it can, generalizing surprisingly well to OOD cases! However, is it optimal for graphics? Our research identifies a fundamental limitation of LLMs for parameter estimation and offers a simple but effective solution.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="trf_stop()" onmouseover="trf_start()"> 
+       <!-- bgcolor="#ffffd0"> -->
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='trf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/trf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <!-- <img src='images/trf.jpg' width="160"> -->
+        </div>
+        <script type="text/javascript">
+          function trf_start() {
+            document.getElementById('trf_image').style.opacity = "1";
+          }
+
+          function trf_stop() {
+            document.getElementById('trf_image').style.opacity = "0";
+          }
+          trf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://time-reversal.github.io/">
+			<span class="papertitle">Explorative Inbetweening of Time and Space
+</span>
+        </a>
+        <br>
+				<strong>Haiwen Feng</strong>,
+        Zheng Ding, 
+        Zhihao Xia,
+        Simon Niklaus, 
+        Victoria Abrevaya,
+        Michael J. Black,
+        Xuaner Zhang
+
+        <br>
+        <em>ECCV</em>, 2024
+        <br>
+        <a href="https://time-reversal.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2403.14611">arXiv</a>
+        <p></p>
+        <p>
+          We proposed "Time-Reversal Fusion" to enable the image-to-video model to generate towards a given end frame without any tuning. It not only provides a unified solution for three visual tasks but also probes the dynamic generation capability of the video diffusion model.
+        </td>
+    </tr>
+
+    <tr onmouseout="oft_stop()" onmouseover="oft_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='oft_image'><video  width=100% muted autoplay loop>
+          <!-- <source src="images/oft.mp4" type="video/mp4"> -->
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/oft.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function oft_start() {
+            document.getElementById('oft_image').style.opacity = "1";
+          }
+
+          function oft_stop() {
+            document.getElementById('oft_image').style.opacity = "0";
+          }
+          oft_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://ig-llm.is.tue.mpg.de/">
+          <span class="papertitle">OFT: Controlling Text-to-Image Diffusion by Orthogonal Finetuning
+          </span>
+        </a>
+        <br>
+				Zeju Qiu*,
+        Weiyang Liu*,
+        <strong>Haiwen Feng</strong>,
+        Yuxuan Xue, 
+        Yao Feng,
+        Zhen Liu,
+        Dan Zhang,
+        Adrian Weller,
+        Bernhard Schoelkopf
+        <br>
+        <em>NeurIPS</em>, 2023
+        <br>
+        <a href="https://oft.wyliu.com/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2306.07280">arXiv</a>
+        /
+        <a href="https://github.com/Zeju1997/oft">code</a>
+
+        <p></p>
+        <p>
+          We proposed a principled PEFT method by orthogonally fine-tuning the pretrained model, resulting in superior alignment and faster convergence for controllable synthesis.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="arteq_stop()" onmouseover="arteq_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='arteq_image'><video  width=100% muted autoplay loop>
+          <!-- <source src="images/arteq.png" type="video/mp4"> -->
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/arteq.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function arteq_start() {
+            document.getElementById('arteq_image').style.opacity = "1";
+          }
+
+          function arteq_stop() {
+            document.getElementById('arteq_image').style.opacity = "0";
+          }
+          arteq_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arteq.is.tue.mpg.de/">
+          <span class="papertitle">ArtEq: Generalizing Neural Human Fitting to Unseen Poses With Articulated SE(3) Equivariance
+</span>
+        </a>
+        <br>
+				<strong>Haiwen Feng</strong>,
+        Peter Kulits, 
+        Shichen Liu,
+        Michael J. Black, 
+        Victoria Abrevaya
+
+        <br>
+        <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://arteq.is.tue.mpg.de/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2304.10528">arXiv</a>
+        /
+        <a href="https://github.com/HavenFeng/ArtEq">code</a>
+
+        <p></p>
+        <p>
+          We extended SE(3) Equivariance to articulated scenarios, achieving principled generalization for OOD body poses with 60% less error, and a network 1000 times faster and only 2.7% the size of the previous state-of-the-art model.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="trust_stop()" onmouseover="trust_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='trust_image'><video  width=100% muted autoplay loop>
+          <!-- <source src="images/trust.png" type="video/mp4"> -->
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/trust.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function trust_start() {
+            document.getElementById('trust_image').style.opacity = "1";
+          }
+
+          function trust_stop() {
+            document.getElementById('trust_image').style.opacity = "0";
+          }
+          trust_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://trust.is.tue.mpg.de/">
+          <span class="papertitle">TRUST: Towards Racially Unbiased Skin Tone Estimation via Scene Disambiguation
+</span>
+        </a>
+        <br>
+				<strong>Haiwen Feng</strong>,
+        Timo Bolkart, 
+        Joachim Tesch, 
+        Michael J. Black, 
+        Victoria Abrevaya
+
+        <br>
+        <em>ECCV</em>, 2022
+        <br>
+        <a href="https://trust.is.tue.mpg.de/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2205.03962">arXiv</a>
+        /
+        <a href="https://github.com/HavenFeng/TRUST">code</a>
+
+        <p></p>
+        <p>
+          We conducted a systematic analysis of skin tone bias in 3D face albedo reconstruction and proposed the first unbiased albedo estimation evaluation suite (benchmark + metric). Additionally, we developed a principled method that reduces this bias by 80%.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="deca_stop()" onmouseover="deca_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='deca_image'><video  width=100% muted autoplay loop>
+          <source src="images/deca.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/deca_after.gif' width=100%>
+        </div>
+        <script type="text/javascript">
+          function deca_start() {
+            document.getElementById('deca_image').style.opacity = "1";
+          }
+
+          function deca_stop() {
+            document.getElementById('deca_image').style.opacity = "0";
+          }
+          deca_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://deca.is.tue.mpg.de/">
+          <span class="papertitle">DECA: Learning an Animatable Detailed 3D Face Model from In-The-Wild Images
+</span>
+        </a>
+        <br>
+        Yao Feng*,
+				<strong>Haiwen Feng*</strong>,
+        Michael J. Black,
+        Timo Bolkart 
+
+        <br>
+        <em>SIGGRAPH</em>, 2021
+        <br>
+        <a href="https://deca.is.tue.mpg.de/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2012.04012">arXiv</a>
+        /
+        <a href="https://github.com/yfeng95/DECA">code</a>
+
+        <p></p>
+        <p>
+          We built the first animatable facial detail model that is purely learned from in-the-wild images and generalize to new expressions.
+        </p>
+      </td>
+    </tr>
+	         
+          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td width="75%" valign="center">
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/cs188.jpg" alt="cs188">
+              </td>
+              <td width="75%" valign="center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr>
+            
+
+            <tr>
+              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                <h2>Basically <br> Blog Posts</h2>
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                <br>
+                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+                <br>
+                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                <br>
+                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              </td>
+            </tr> -->
+            
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  The template is stole from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

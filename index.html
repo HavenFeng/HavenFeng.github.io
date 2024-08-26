@@ -23,10 +23,10 @@
                   Haven (Haiwen) Feng
                 </p>
                 <p>Hi, I'm Haven! I'm a 3rd year PhD student at <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems (MPI-IS)</a>, advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>. <br>
-                  Starting in Autumn 2024, I will be visiting <a href="https://bair.berkeley.edu/">Berkeley AI Research </a>, where I will be co-advised by <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. I've also spent a wonderful summer with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s group at Adobe in 2023, hosted by <a href="https://ceciliavision.github.io/">Cecilia Zhang</a>.
+                  Starting in Autumn 2024, I will be visiting <a href="https://bair.berkeley.edu/">Berkeley AI Research </a>, where I will be advised by <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. I've also spent a wonderful summer with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s group at Adobe in 2023, hosted by <a href="https://ceciliavision.github.io/">Cecilia Zhang</a>.
                 </p>
                 <p>
-                  Before my PhD, I received B.Sc. and M.Sc. degrees in Physics at the University of Tübingen. For my master's, I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a> at Tübingen AI Center. During my bachelor's, I worked on 3D face reconstruction with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
+                  Before my PhD, I received M.Sc. and B.Sc. degrees in Physics at the University of Tübingen. For my master's, I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a> at Tübingen AI Center. During my bachelor's, I worked on 3D face reconstruction with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
                    I was born and raised in Beijing.
                 </p>
                 <p style="text-align:center">
@@ -57,6 +57,61 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+
+    <tr onmouseout="sgp_stop()" onmouseover="sgp_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='oft_image'><video  width=100% muted autoplay loop>
+          <!-- <source src="images/oft.mp4" type="video/mp4"> -->
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/sgp-bench.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function oft_start() {
+            document.getElementById('oft_image').style.opacity = "1";
+          }
+
+          function oft_stop() {
+            document.getElementById('oft_image').style.opacity = "0";
+          }
+          oft_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://sgp-bench.github.io/">
+          <span class="papertitle">SGP-Bench: Can Large Language Models Understand Symbolic Graphics Programs?
+          </span>
+        </a>
+        <br>
+        Zeju Qiu*,
+        Weiyang Liu*,
+        <strong>Haiwen Feng*</strong>,
+        Zhen Liu,
+        Tim Z. Xiao,
+        Katherine M. Collins,
+        Joshua B. Tenenbaum, 
+        Adrian Weller, 
+        Michael J. Black, 
+        Bernhard Schölkopf
+        <br>
+        <em>Preprint</em>, 2024
+        <br>
+        <a href="https://sgp-bench.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2408.08313">arXiv</a>
+        /
+        <a href="https://github.com/sgp-bench/sgp-bench">code</a>
+
+        <p></p>
+        <p>
+          We questioned whether LLMs can "imagine" how the corresponding graphics content would look without visually seeing it! 
+          This task requires both low-level skills (e.g., counting objects, identifying colors) and high-level reasoning (e.g., interpreting affordances, understanding semantics). 
+          Our benchmark effectively differentiates models by their reasoning abilities, with performance consistently aligning with the scaling law!
+        </p>
+      </td>
+    </tr>
+        
     <tr onmouseout="ig_llm_stop()" onmouseover="ig_llm_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -96,7 +151,8 @@
         <a href="https://download.is.tue.mpg.de/ig-llm/ig-llm-arXiv.pdf">arXiv</a>
         <p></p>
         <p>
-          We explored if inverse graphics could be approached as a code generation task and found it can, generalizing surprisingly well to OOD cases! However, is it optimal for graphics? Our research identifies a fundamental limitation of LLMs for parameter estimation and offers a simple but effective solution.
+          We explored if inverse graphics could be approached as a code generation task and found it generalize surprisingly well to OOD cases! 
+          However, is it optimal for graphics? Our research identifies a fundamental limitation of LLMs for parameter estimation and offers a simple but effective solution.
         </p>
       </td>
     </tr>
@@ -171,7 +227,7 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ig-llm.is.tue.mpg.de/">
+        <a href="https://oft.wyliu.com/">
           <span class="papertitle">OFT: Controlling Text-to-Image Diffusion by Orthogonal Finetuning
           </span>
         </a>

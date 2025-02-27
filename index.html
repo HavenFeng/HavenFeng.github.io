@@ -124,21 +124,23 @@
     <tr onmouseout="interdyn_stop()" onmouseover="interdyn_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='interdyn_image'><video width=100% height=100% muted autoplay loop>
-          <source src="images/interdyn.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/interdyn.png' width="160">
+          <div class="two" id="interdyn_image">
+            <video width="100%" height="100%" muted autoplay loop>
+              <source src="images/interdyn.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="images/interdyn.png" width="160">
         </div>
         <script type="text/javascript">
           function interdyn_start() {
-            document.getElementById('interdyn_image').style.opacity = "1";
+            document.getElementById("interdyn_image").style.opacity = "1";
           }
 
           function interdyn_stop() {
-            document.getElementById('interdyn_image').style.opacity = "0";
+            document.getElementById("interdyn_image").style.opacity = "0";
           }
-          interdyn_stop()
+          interdyn_stop();
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">

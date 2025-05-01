@@ -69,7 +69,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in machine learning, computer vision, computer graphics, and particularly in how to understand and recreate our physical world in a principled and generalized way. My research centers on structural understanding and generation of visual data, with a focus on inverse graphics and controllable generation with foundation models. 
+                  I'm interested in machine learning, computer vision, computer graphics, and particularly in how to understand and recreate our physical world in a principled and generalized way. My research explores the underlying structures in visual data - from 3D/4D representations and geometric symmetries to symbolic abstractions, physical priors and beyond - to enable more controllable and interpretable AI systems. I focus on inverse graphics and controllable generation, often leveraging foundation models to bridge perception and synthesis.
                   <br>
                   <br>
                   Selected publications are listed below.
@@ -79,6 +79,50 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+    <tr onmouseout="st4rtrack_stop()" onmouseover="st4rtrack_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='st4rtrack_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/st4rtrack.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/st4rtrack.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function st4rtrack_start() {
+            document.getElementById('st4rtrack_image').style.opacity = "1";
+          }
+
+          function st4rtrack_stop() {
+            document.getElementById('st4rtrack_image').style.opacity = "0";
+          }
+          st4rtrack_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">St4RTrack: Simultaneous 4D Reconstruction and Tracking in the World
+        </span>
+        <br>
+        <strong>Haiwen Feng</strong>*,
+        Junyi Zhang*,
+        Qianqian Wang,
+        Yufei Ye,
+        Pengcheng Yu,
+        Michael J. Black,
+        Trevor Darrell,
+        Angjoo Kanazawa
+        <br>
+        (*Equal contribution, listed alphabetically)
+        <br>
+        <em>Preprint</em>, 2025
+        <br>
+        <a href="https://st4rtrack.github.io/">project page</a> /
+        <a href="https://arxiv.org/abs/2504.13152">arXiv</a>
+        <p>
+          What is the minimal representation required to model both geometry and correspondence of the 4D world? Could it be done in a unified framework? It turns out to be remarkably simple! By predicting two properly defined point maps—essentially reconstructing one frame's 3D moment in another frame's coordinates—We propose St4RTrack, a feed-forward framework that simultaneously reconstructs and tracks dynamic video content in a world coordinate from monocular video. 
+      </td>
+    </tr>
 
     <tr onmouseout="genlit_stop()" onmouseover="genlit_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">

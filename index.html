@@ -116,12 +116,54 @@
         <br>
         (*Equal contribution, listed alphabetically)
         <br>
-        <em>Preprint</em>, 2025
+        <em>ICCV</em>, 2025
         <br>
         <a href="https://st4rtrack.github.io/">project page</a> /
         <a href="https://arxiv.org/abs/2504.13152">arXiv</a>
         <p>
           What is the minimal representation required to model both geometry and correspondence of the 4D world? Could it be done in a unified framework? It turns out to be remarkably simple! We propose St4RTrack, a feed-forward framework that simultaneously reconstructs and tracks dynamic video content in a world coordinate from monocular video, embedding the 4D understanding into the transformer-based backbone.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="etch_stop()" onmouseover="etch_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='etch_image'><video width=100% height=56.25% muted autoplay loop>
+          <source src="images/etch_img.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/etch_img.png' width=100% height=56.25% >
+        </div>
+        <script type="text/javascript">
+          function etch_start() {
+            document.getElementById('etch_image').style.opacity = "1";
+          }
+
+          function etch_stop() {
+            document.getElementById('etch_image').style.opacity = "0";
+          }
+          etch_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">ETCH: Generalizing Body Fitting to Clothed Humans via Equivariant Tightness
+        </span>
+        <br>
+        Boqian Li, 
+        <strong>Haiwen Fengᐩ</strong>,
+        Zeyu Cai,
+        Michael J. Black,
+        Yuliang Xiu
+        <br>
+        (ᐩProject lead)
+        <br>
+        <em>ICCV</em>, 2025  &nbsp <font color="red"><strong>(Highlight Presentation)</strong></font>
+        <br>
+        <a href="https://boqian-li.github.io/ETCH/">project page</a> /
+        <a href="https://arxiv.org/abs/2503.10624">arXiv</a>
+        <p>
+        ArtEq was great, but how do we fit a body to a 3D clothed human point cloud? We propose ETCH, a novel pipeline leveraging local SE(3) equivariance to map cloth-to-body surfaces, encoding tightness as displacement vectors. ETCH simplifies fitting into a marker fitting task, outperforming state-of-the-art methods in accuracy and generalization across challenging scenarios.
         </p>
       </td>
     </tr>

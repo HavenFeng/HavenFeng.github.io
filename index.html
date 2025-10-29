@@ -20,17 +20,17 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Haven (Haiwen) Feng
+                  Haiwen (Haven) Feng
                 </p>
                 <p>Hi, I'm Haven! I'm a 4th year PhD student at <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems (MPI-IS)</a>, advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>. <br>
                   Since Autumn 2024, I have been visiting <a href="https://bair.berkeley.edu/">Berkeley AI Research</a>, where I am advised by <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. I also spent a wonderful summer with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s group at Adobe in 2023, hosted by <a href="https://ceciliavision.github.io/">Cecilia Zhang</a>.
                 </p>
                 <p>
                   Before my PhD, I received M.Sc. and B.Sc. degrees in Physics at the University of Tübingen. For my master's, I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a> at Tübingen AI Center. During my bachelor's, I worked on 3D face reconstruction with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
-                   I was born and raised in Beijing.
+                  <br>
+                  I was born and raised in Beijing.
                    <br>
                    <br>
-                   <span style="color: red;"><b>I'm on the job market now!</b></span>
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:havenfeng422@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -69,8 +69,9 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in machine learning, computer vision, and computer graphics—particularly in how to understand and recreate the physical world in a generalizable way. My research explores the underlying structures in visual data—from 3D/4D representations and group symmetries to symbolic abstractions, physical priors, and beyond—to enable more controllable and interpretable AI systems. 
-                  Recently, I've been investigating how foundation models can better understand and simulate physical behaviors, bridging the gap between large-scale learning and principled physical reasoning.
+                  I'm interested in machine learning, computer vision, and computer graphics, particularly in how to recreate the visual world. My research explores the essential structures in visual data—from 3D geometry, group symmetries to symbolic abstractions, physical priors, and beyond—to develop steerable and scalable learning systems.  
+                  <br>
+                  Recently, I have been focusing on fine-grained control and alignment of foundation models.
                   <br>
                   <br>
                   Selected publications are listed below.
@@ -81,6 +82,48 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
+
+            <tr onmouseout="genlit_stop()" onmouseover="genlit_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='genlit_image'><video width=100% height=100% muted autoplay loop>
+                  <source src="images/genlit.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/genlit.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function genlit_start() {
+                    document.getElementById('genlit_image').style.opacity = "1";
+                  }
+        
+                  function genlit_stop() {
+                    document.getElementById('genlit_image').style.opacity = "0";
+                  }
+                  genlit_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">GenLit: Reformulating Single-Image Relighting as Video Generation
+                </span>
+                <br>
+                Shrisha Bharadwaj*,
+                <strong>Haiwen Feng*</strong>,
+                Giorgio Becherini,
+                Victoria Fernandez Abrevaya,
+                Michael J. Black
+                <br>
+                (*Equal contribution, listed alphabetically)
+                <br>
+                <em>SIGGRAPH Asia</em>, 2025
+                <br>
+                <a href="https://genlit-probingi2v.github.io/">project page</a> /
+                <a href="https://arxiv.org/abs/2412.11224">arXiv</a>
+                <p>
+                  Could we reformulate single image near-field relighting as a video generation task? By leveraging video diffusion models and a small synthetic dataset, we achieve realistic relighting effects with cast shadows on real images <strong>without explicit 3D</strong>. Our work reveals the potential of foundation models in understanding physical properties and performing graphics tasks.
+                </p>
+              </td>
+            </tr>        
     <tr onmouseout="st4rtrack_stop()" onmouseover="st4rtrack_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -168,46 +211,7 @@
       </td>
     </tr>
 
-    <tr onmouseout="genlit_stop()" onmouseover="genlit_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='genlit_image'><video width=100% height=100% muted autoplay loop>
-          <source src="images/genlit.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/genlit.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function genlit_start() {
-            document.getElementById('genlit_image').style.opacity = "1";
-          }
 
-          function genlit_stop() {
-            document.getElementById('genlit_image').style.opacity = "0";
-          }
-          genlit_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <span class="papertitle">GenLit: Reformulating Single-Image Relighting as Video Generation
-        </span>
-        <br>
-        Shrisha Bharadwaj*,
-        <strong>Haiwen Feng*</strong>,
-        Victoria Fernandez Abrevaya,
-        Michael J. Black
-        <br>
-        (*Equal contribution, listed alphabetically)
-        <br>
-        <em>Preprint</em>, 2025
-        <br>
-        <a href="https://genlit-probingi2v.github.io/">project page</a> /
-        <a href="https://arxiv.org/abs/2412.11224">arXiv</a>
-        <p>
-          Could we reformulate single image near-field relighting as a video generation task? By leveraging video diffusion models and a small synthetic dataset, we achieve realistic relighting effects with cast shadows on real images <strong>without explicit 3D</strong>. Our work reveals the potential of foundation models in understanding physical properties and performing graphics tasks.
-        </p>
-      </td>
-    </tr>
 
     <tr onmouseout="interdyn_stop()" onmouseover="interdyn_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">

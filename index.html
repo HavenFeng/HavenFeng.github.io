@@ -22,11 +22,12 @@
                 <p class="name" style="text-align: center;">
                   Haiwen (Haven) Feng
                 </p>
-                <p>Hi, I'm Haven! I'm a 4th year PhD student at <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems (MPI-IS)</a>, advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>. <br>
-                  Since Autumn 2024, I have been visiting <a href="https://bair.berkeley.edu/">Berkeley AI Research</a>, where I am advised by <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. I also spent a wonderful summer with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s group at Adobe in 2023, hosted by <a href="https://ceciliavision.github.io/">Cecilia Zhang</a>.
-                </p>
+                  <p>
+                  I'm currently a postdoctoral scholar at <a href="https://bair.berkeley.edu/">UC Berkeley</a>, working with <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a> and <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, building something new. <br>
+                  I completed my PhD at the <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a> (2021.10–2024.6) and <a href="https://bair.berkeley.edu/">Berkeley AI Research</a> (2024.6–2026.2), advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> and <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. Previously, I interned with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s team at Adobe.
+                  </p>
                 <p>
-                  Before my PhD, I received M.Sc. and B.Sc. degrees in Physics at the University of Tübingen. For my master's, I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a> at Tübingen AI Center. During my bachelor's, I worked on 3D face reconstruction with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
+                  Before my PhD, I received both M.Sc. and B.Sc. degrees in Physics at the University of Tübingen, where I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a>, and 3D morphable models with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
                   <br>
                   I was born and raised in Beijing.
                    <br>
@@ -69,13 +70,12 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in machine learning, computer vision, and computer graphics, particularly in how to recreate the visual world. My research explores the essential structures in visual data—from 3D geometry, group symmetries to symbolic abstractions, physical priors, and beyond—to develop steerable and scalable learning systems.  
+                  My research focuses on building structural world models that are controllable by human and verifiable by design. I study the fundamental structures underlying visual data, including 3D geometry, group symmetries, symbolic abstractions, and physical priors, with the goal of developing learning systems that are both steerable and scalable.
                   <br>
-                  Recently, I have been focusing on fine-grained control and alignment of foundation models.
-                  <br>
-                  <br>
+                  More recently, I have been working on post-training of multimodal foundation models.
+                </p>
+                <p>
                   Selected publications are listed below.
-
                 </p>
               </td>
             </tr>
@@ -83,7 +83,188 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
 
-            <tr onmouseout="genlit_stop()" onmouseover="genlit_start()">
+    <!-- ==================== VIGA (2026) ==================== -->
+    <tr id="paper-viga" onmouseout="viga_stop()" onmouseover="viga_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='viga_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/viga.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/viga.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function viga_start() {
+            document.getElementById('viga_image').style.opacity = "1";
+          }
+
+          function viga_stop() {
+            document.getElementById('viga_image').style.opacity = "0";
+          }
+          viga_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">VIGA: Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning
+        </span>
+        <br>
+        Shaofeng Yin,
+        Jiaxin Ge,
+        Zora Zhiruo Wang,
+        Xiuyu Li,
+        Michael J. Black,
+        Trevor Darrell,
+        Angjoo Kanazawa,
+        <strong>Haiwen Feng</strong>
+        <br>
+        <em>arXiv</em>, 2026
+        <br>
+        <a href="https://fugtemypt123.github.io/VIGA-website/">project page</a> /
+        <a href="https://arxiv.org/abs/2601.11109">arXiv</a>
+        <p>
+          VIGA reframes inverse graphics as an agentic reasoning process: an MLLM iteratively writes, renders, compares, and revises graphics programs through a closed loop with evolving context memory, without any task-specific modules or fine-tuning.
+      </td>
+    </tr>
+
+    <!-- ==================== MaxRL (2026) ==================== -->
+    <tr id="paper-maxrl" onmouseout="maxrl_stop()" onmouseover="maxrl_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='maxrl_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/maxrl.gif" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/maxrl.gif' width="200">
+        </div>
+        <script type="text/javascript">
+          function maxrl_start() {
+            document.getElementById('maxrl_image').style.opacity = "1";
+          }
+
+          function maxrl_stop() {
+            document.getElementById('maxrl_image').style.opacity = "0";
+          }
+          maxrl_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">Maximum Likelihood Reinforcement Learning
+        </span>
+        <br>
+        Fahim Tajwar*,
+        Guanning Zeng*,
+        Yueer Zhou,
+        Yuda Song,
+        Daman Arora,
+        Yiding Jiang,
+        Jeff Schneider,
+        Ruslan Salakhutdinov,
+        <strong>Haiwen Feng</strong>,
+        Andrea Zanette
+        <br>
+        <em>arXiv</em>, 2026
+        <br>
+        <a href="https://zanette-labs.github.io/MaxRL/">project page</a> /
+        <a href="https://arxiv.org/abs/2602.02710">arXiv</a>
+        <p>
+          Standard RL objectives drift away from maximum likelihood as compute grows. MaxRL closes this gap with a compute-indexed family of objectives that smoothly interpolates between REINFORCE and maximum likelihood, equipped with an unbiased policy-gradient estimator. It Pareto-dominates existing methods across every tested model and task, yielding up to 20x test-time scaling efficiency over GRPO.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ==================== FPO (ICLR 2026) ==================== -->
+    <tr id="paper-fpo" onmouseout="fpo_stop()" onmouseover="fpo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='fpo_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/fpo.gif" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/fpo.gif' width="200">
+        </div>
+        <script type="text/javascript">
+          function fpo_start() {
+            document.getElementById('fpo_image').style.opacity = "1";
+          }
+
+          function fpo_stop() {
+            document.getElementById('fpo_image').style.opacity = "0";
+          }
+          fpo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">Flow Matching Policy Gradients
+        </span>
+        <br>
+        David McAllister*,
+        Songwei Ge*,
+        Brent Yi*,
+        Chung Min Kim,
+        Ethan Weber,
+        Hongsuk Choi,
+        <strong>Haiwen Feng</strong>,
+        Angjoo Kanazawa
+        <br>
+        <em>ICLR</em>, 2026
+        <br>
+        <a href="https://flowreinforce.github.io/">project page</a> /
+        <a href="https://arxiv.org/abs/2507.21053">arXiv</a>
+        <p>
+          FPO brings flow matching into on-policy RL by casting policy optimization as maximizing an advantage-weighted ratio derived from the conditional flow matching loss, fully compatible with PPO-clip. Unlike prior diffusion-based RL methods, FPO is agnostic to the choice of integrator at training and inference time, and shows that flow-based policies learn multimodal action distributions that outperform Gaussian policies.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ==================== VPBench (2025) ==================== -->
+    <tr id="paper-vpbench" onmouseout="vpbench_stop()" onmouseover="vpbench_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='vpbench_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/VPBench.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/VPBench.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function vpbench_start() {
+            document.getElementById('vpbench_image').style.opacity = "1";
+          }
+
+          function vpbench_stop() {
+            document.getElementById('vpbench_image').style.opacity = "0";
+          }
+          vpbench_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">Visually Prompted Benchmarks Are Surprisingly Fragile
+        </span>
+        <br>
+        <strong>Haiwen Feng</strong>*,
+        Long Lian*,
+        Lisa Dunlap*,
+        Jiahao Shu,
+        XuDong Wang,
+        Renhao Wang,
+        Trevor Darrell,
+        Alane Suhr,
+        Angjoo Kanazawa
+        <br>
+        (*Equal contribution)
+        <br>
+        <em>arXiv</em>, 2025
+        <br>
+        <a href="https://lisadunlap.github.io/vpbench/">project page</a> /
+        <a href="https://arxiv.org/abs/2512.17875">arXiv</a> /
+        <a href="https://github.com/TonyLianLong/VPBench">code</a>
+        <p>
+          Visually prompted VLM benchmarks are far more fragile than they look: seemingly irrelevant details — marker color, size, even JPEG compression — can completely flip model rankings on leaderboards. We introduce VPBench, a larger benchmark with 16 visual marker variants designed to expose this instability and enable robust evaluation.
+        </p>
+      </td>
+    </tr>
+
+            <tr id="paper-genlit" onmouseout="genlit_stop()" onmouseover="genlit_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='genlit_image'><video width=100% height=100% muted autoplay loop>
@@ -124,14 +305,14 @@
                 </p>
               </td>
             </tr>        
-    <tr onmouseout="st4rtrack_stop()" onmouseover="st4rtrack_start()">
+    <tr id="paper-st4rtrack" onmouseout="st4rtrack_stop()" onmouseover="st4rtrack_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='st4rtrack_image'><video width=100% height=56.25% muted autoplay loop>
+          <div class="two" id='st4rtrack_image'><video width=100% height=100% muted autoplay loop>
           <source src="images/st4rtrack.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/st4rtrack.png' width=100% height=56.25% >
+          <img src='images/st4rtrack.png' width=100% height=100% >
         </div>
         <script type="text/javascript">
           function st4rtrack_start() {
@@ -213,7 +394,7 @@
 
 
 
-    <tr onmouseout="interdyn_stop()" onmouseover="interdyn_start()">
+    <tr id="paper-interdyn" onmouseout="interdyn_stop()" onmouseover="interdyn_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id="interdyn_image">
@@ -258,7 +439,7 @@
     </tr>
     
 
-    <tr onmouseout="sgp_stop()" onmouseover="sgp_start()">
+    <tr id="paper-sgp" onmouseout="sgp_stop()" onmouseover="sgp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='oft_image'><video  width=100% muted autoplay loop>
@@ -314,7 +495,7 @@
       </td>
     </tr>
         
-    <tr onmouseout="ig_llm_stop()" onmouseover="ig_llm_start()">
+    <tr id="paper-igllm" onmouseout="ig_llm_stop()" onmouseover="ig_llm_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='ig_llm_image'><video  width=100% muted autoplay loop>
@@ -362,7 +543,7 @@
     </tr>
 
 
-    <tr onmouseout="trf_stop()" onmouseover="trf_start()"> 
+    <tr id="paper-trf" onmouseout="trf_stop()" onmouseover="trf_start()">
        <!-- bgcolor="#ffffd0"> -->
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -410,7 +591,7 @@
         </td>
     </tr>
 
-    <tr onmouseout="oft_stop()" onmouseover="oft_start()">
+    <tr id="paper-oft" onmouseout="oft_stop()" onmouseover="oft_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='oft_image'><video  width=100% muted autoplay loop>

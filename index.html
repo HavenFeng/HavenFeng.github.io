@@ -23,8 +23,9 @@
                   Haiwen (Haven) Feng
                 </p>
                   <p>
-                  I'm currently a postdoctoral scholar at <a href="https://bair.berkeley.edu/">UC Berkeley</a>, working with <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a> and <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, building something new. <br>
-                  I completed my PhD at the <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a> (2021.10–2024.6) and <a href="https://bair.berkeley.edu/">Berkeley AI Research</a> (2024.6–2026.2), advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> and <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. Previously, I interned with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s team at Adobe.
+                    I'm currently a postdoctoral scholar at UC Berkeley, working with <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a> and <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, building something new.
+                    <br>
+                    I completed my PhD at the <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a> (Nov 2021–Feb 2026), co-advised by <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> and <a href="https://people.eecs.berkeley.edu/~kanazawa">Angjoo Kanazawa</a>. My time at Berkeley started during my PhD, when I joined <a href="https://bair.berkeley.edu/">Berkeley AI Research</a> as a visiting PhD in Jun 2024. Previously, I interned with <a href="https://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s team at Adobe.
                   </p>
                 <p>
                   Before my PhD, I received both M.Sc. and B.Sc. degrees in Physics at the University of Tübingen, where I researched disentangled representation learning with <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en">Wieland Brendel</a> and <a href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a>, and 3D morphable models with <a href="https://sites.google.com/site/bolkartt">Timo Bolkart</a> and <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a> at MPI-IS. <br>
@@ -70,9 +71,13 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research focuses on building structural world models that are controllable by human and verifiable by design. I study the fundamental structures underlying visual data, including 3D geometry, group symmetries, symbolic abstractions, and physical priors, with the goal of developing learning systems that are both steerable and scalable.
+                  My research focuses on building structural world models that are controllable by human and verifiable by design.
                   <br>
-                  More recently, I have been working on post-training of multimodal foundation models.
+                  Specifically, it's about bridging structured abstractions and continuous visual modeling in both directions. 
+                  On one hand, I study how symbolic and geometric structures can be embedded into video generative models, enabling continuous world models that are more controllable and physically grounded. 
+                  On the other hand, I explore how the reasoning and abstraction capabilities of vision-language models can be mapped back onto the physical world, transforming symbolic understanding into structured representations of continuous, embodied reality.
+                  <br>
+                  More recently, I have been working on post-training and agentic reasoning of multimodal foundation models.
                 </p>
                 <p>
                   Selected publications are listed below.
@@ -82,6 +87,51 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
+
+    <!-- ==================== SelfEvo (2026) ==================== -->
+    <tr id="paper-selfevo" onmouseout="selfevo_stop()" onmouseover="selfevo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='selfevo_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/self_evo.gif" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/self_evo.gif' width="200">
+        </div>
+        <script type="text/javascript">
+          function selfevo_start() {
+            document.getElementById('selfevo_image').style.opacity = "1";
+          }
+
+          function selfevo_stop() {
+            document.getElementById('selfevo_image').style.opacity = "0";
+          }
+          selfevo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">Self-Improving 4D Perception via Self-Distillation
+        </span>
+        <br>
+        Nan Huang*,
+        Pengcheng Yu*,
+        Weijia Zeng,
+        James M. Rehg,
+        Angjoo Kanazawa,
+        <strong>Haiwen Feng<sup>&dagger;</sup></strong>,
+        Qianqian Wang<sup>&dagger;</sup>
+        <br>
+        (*Equal contribution, <sup>&dagger;</sup>Equal advising)
+        <br>
+        <em>arXiv</em>, 2026
+        <br>
+        <a href="https://self-evo.github.io/">project page</a> /
+        <a href="https://arxiv.org/abs/2604.08532">arXiv</a>
+        <p>
+          Can 3D perception models improve without any 4D ground-truth? We show that self-distillation on unlabeled video, using the model's own predictions as targets, reliably bootstraps stronger 4D perception, scaling beyond the limits of supervised data and pointing toward a path for continually self-improving 4D geometric models.
+        </p>
+      </td>
+    </tr>
 
     <!-- ==================== VIGA (2026) ==================== -->
     <tr id="paper-viga" onmouseout="viga_stop()" onmouseover="viga_start()">
@@ -162,7 +212,11 @@
         <strong>Haiwen Feng</strong>,
         Andrea Zanette
         <br>
-        <em>arXiv</em>, 2026
+        (*Equal contribution)
+        <br>
+        <em>ICML</em>, 2026
+        <br>
+        <em>ICLR</em>, 2026 SPOT Workshop &nbsp <font color="red"><strong>(Best Paper)</strong></font>
         <br>
         <a href="https://zanette-labs.github.io/MaxRL/">project page</a> /
         <a href="https://arxiv.org/abs/2602.02710">arXiv</a>
@@ -205,6 +259,8 @@
         Hongsuk Choi,
         <strong>Haiwen Feng</strong>,
         Angjoo Kanazawa
+        <br>
+        (*Equal contribution)
         <br>
         <em>ICLR</em>, 2026
         <br>
